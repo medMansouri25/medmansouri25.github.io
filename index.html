@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,13 +13,13 @@
     <div class="container nav">
       <a class="logo" href="#hero">MMA</a>
       <nav class="nav-links">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a href="#hero" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -29,18 +29,18 @@
     <section id="hero" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="hero-eyebrow">ENSIM • Software Engineering</p>
+          <p class="hero-eyebrow" data-i18n="hero.eyebrow">ENSIM • Software Engineering</p>
           <h1>
-            Hi, I'm <span class="accent">Mohammed Mansouri</span><br />
-            <span class="hero-role">Software Engineering Student</span>
+            <span data-i18n="hero.greeting">Hi, I'm</span> <span class="accent">Mohammed Mansouri</span><br />
+            <span class="hero-role" data-i18n="hero.role">Software Engineering Student</span>
           </h1>
-          <p class="hero-subtitle">
-            Étudiant en cycle ingénieur à l’ENSIM et alternant chez Covéa (MMA),
-            passionné par le développement logiciel, les architectures backend
-            et les technologies Cloud.
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Engineering student at ENSIM and apprentice at Covéa (MMA),
+            passionate about software development, backend architectures
+            and Cloud technologies.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-neutral" href="mailto:mansouri.med25@outlook.fr">Email</a>
+            <a class="btn btn-neutral" href="mailto:mansouri.med25@outlook.fr" data-i18n="hero.emailBtn">Email</a>
           </div>
           <div class="hero-socials">
             <a href="https://github.com/medMansouri25" target="_blank">GitHub</a>
@@ -54,40 +54,41 @@
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">
-          Pour mieux comprendre mon parcours et ce qui me motive.
+        <h2 class="section-title" data-i18n="about.title">About Me</h2>
+        <p class="section-subtitle" data-i18n="about.subtitle">
+          To better understand my background and what drives me.
         </p>
 
         <div class="about-grid">
           <div>
-            <h2>Who am I?</h2>
-            <p>
-              Je suis étudiant en 2 ème année de cycle ingénieur à l’ENSIM (Université du Mans),
-              spécialisation informatique, et j’effectue mon alternance chez Covéa (MMA) au sein
-              des équipes de gestion de produits IARD.
+            <h2 data-i18n="about.whoAmI">Who am I?</h2>
+            <p data-i18n="about.intro">
+              I am a second-year engineering student at ENSIM (University of Le Mans),
+              specializing in computer science, and I am doing my apprenticeship at Covéa (MMA).
             </p>
-            <p>
-              J’aime concevoir des solutions fiables et maintenables, que ce soit en
-              <strong>Java</strong>, <strong>Node.js</strong> ou via des architectures orientées services.
-              Mon expérience en entreprise m’a permis de développer des
-              <strong>soft skills</strong> solides : communication, gestion de priorités,
-              professionnalisme, et travail en équipe.
+            <p data-i18n-html="about.passion">
+              I enjoy designing reliable and maintainable solutions, whether in
+              <strong>Java</strong>, <strong>Node.js</strong>, <strong>Angular</strong>, <strong>JavaScript</strong> or through service-oriented architectures.
+              My professional experience has allowed me to develop strong
+              <strong>soft skills</strong>: communication, priority management,
+              professionalism, and teamwork.
             </p>
-            <p>
-              Je m’intéresse particulièrement au <strong>Cloud</strong>, au <strong>DevOps</strong> et aux
-              bonnes pratiques d’architecture logicielle, tout en consolidant mes bases en
-              réseaux, systèmes et développement back-end.
+            <p data-i18n-html="about.interests">
+              I am particularly interested in <strong>Cloud</strong>, <strong>DevOps</strong> and
+              software architecture best practices, while strengthening my foundations in
+              networks, systems and back-end development.
             </p>
           </div>
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section skills-section">
       <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">
-          Une vue d’ensemble de mes compétences techniques.
+        <h2 class="section-title" data-i18n="skills.title">Technical Skills</h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">
+          An overview of my technical skills.
         </p>
 
         <div class="skills-grid">
@@ -95,7 +96,7 @@
           <article class="skill-card">
             <div class="skill-header">
               <div class="skill-icon">💻</div>
-              <h3 class="skill-title">Programming Languages</h3>
+              <h3 class="skill-title" data-i18n="skills.programming">Programming Languages</h3>
             </div>
             <div class="skill-tags">
               <span class="tag-pill">Java</span>
@@ -109,7 +110,7 @@
           <article class="skill-card">
             <div class="skill-header">
               <div class="skill-icon">🌐</div>
-              <h3 class="skill-title">Web Development</h3>
+              <h3 class="skill-title" data-i18n="skills.webDev">Web Development</h3>
             </div>
             <div class="skill-tags">
               <span class="tag-pill">HTML</span>
@@ -126,7 +127,7 @@
           <article class="skill-card">
             <div class="skill-header">
               <div class="skill-icon">🗄️</div>
-              <h3 class="skill-title">Backend & Databases</h3>
+              <h3 class="skill-title" data-i18n="skills.backend">Backend & Databases</h3>
             </div>
             <div class="skill-tags">
               <span class="tag-pill">REST API</span>
@@ -139,7 +140,7 @@
           <article class="skill-card">
             <div class="skill-header">
               <div class="skill-icon">🛠️</div>
-              <h3 class="skill-title">DevOps & Tools</h3>
+              <h3 class="skill-title" data-i18n="skills.devops">DevOps & Tools</h3>
             </div>
             <div class="skill-tags">
               <span class="tag-pill">Git</span>
@@ -156,7 +157,7 @@
           <article class="skill-card">
             <div class="skill-header">
               <div class="skill-icon">✏️</div>
-              <h3 class="skill-title">Design & Modelling</h3>
+              <h3 class="skill-title" data-i18n="skills.design">Design & Modelling</h3>
             </div>
             <div class="skill-tags">
               <span class="tag-pill">UML</span>
@@ -171,7 +172,7 @@
           <article class="skill-card">
             <div class="skill-header">
               <div class="skill-icon">📡</div>
-              <h3 class="skill-title">Embedded & Systems</h3>
+              <h3 class="skill-title" data-i18n="skills.embedded">Embedded & Systems</h3>
             </div>
             <div class="skill-tags">
               <span class="tag-pill">Arduino</span>
@@ -190,19 +191,19 @@
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-subtitle">
-          Une sélection de projets académiques et personnels.
+        <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+        <p class="section-subtitle" data-i18n="projects.subtitle">
+          A selection of academic and personal projects.
         </p>
 
         <div class="grid projects-grid">
 
           <article class="card project-card">
-            <h3>Client/Serveur Linux (C)</h3>
-            <p>
-              Serveur TCP multi-clients et client en C sous Linux,
-              utilisé avec une carte Raspberry Pi pour découvrir les sockets
-              et la communication réseau bas niveau.
+            <h3 data-i18n="projects.project1.title">Client / Server Linux (C)</h3>
+            <p data-i18n="projects.project1.desc">
+              Multi-client TCP server and client in C on Linux,
+              used with a Raspberry Pi board to explore sockets
+              and low-level network communication.
             </p>
             <div class="project-tags">
               <span class="tag-pill">C</span>
@@ -210,16 +211,16 @@
               <span class="tag-pill">Sockets</span>
               <span class="tag-pill">TCP</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Serveur-client-in-linux-.git" target="_blank">
-              Code GitHub →
+            <a class="link" href="https://github.com/medMansouri25/Serveur-client-in-linux-.git" target="_blank" data-i18n="projects.viewCode">
+              View Code →
             </a>
           </article>
 
           <article class="card project-card">
-            <h3>API REST Rhum (Node.js + MongoDB)</h3>
-            <p>
-              Backend complet pour gérer des Rhums, Recettes et Utilisateurs,
-              architecture MVC avec Express, authentification JWT et tests Postman.
+            <h3 data-i18n="projects.project2.title">API REST Rhum (Node.js + MongoDB)</h3>
+            <p data-i18n="projects.project2.desc">
+              Complete backend to manage Rums, Recipes and Users,
+              MVC architecture with Express, JWT authentication and Postman tests.
             </p>
             <div class="project-tags">
               <span class="tag-pill">Node.js</span>
@@ -227,16 +228,16 @@
               <span class="tag-pill">MongoDB</span>
               <span class="tag-pill">JWT</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Projet_Back_End_API-1.git" target="_blank">
-              Code GitHub →
+            <a class="link" href="https://github.com/medMansouri25/Projet_Back_End_API-1.git" target="_blank" data-i18n="projects.viewCode">
+              View Code →
             </a>
           </article>
 
           <article class="card project-card">
-            <h3>Task Manager (Angular + Spring)</h3>
-            <p>
-              Application de gestion de tâches réalisée avec Angular et une API Spring Boot
-              (JPA/H2), comprenant filtres, statuts et authentification basique.
+            <h3 data-i18n="projects.project3.title">Task Manager (Angular + Spring)</h3>
+            <p data-i18n="projects.project3.desc">
+              Task management application built with Angular and a Spring Boot API
+              (JPA/H2), including filters, statuses and basic authentication.
             </p>
             <div class="project-tags">
               <span class="tag-pill">Angular</span>
@@ -244,40 +245,40 @@
               <span class="tag-pill">JPA</span>
               <span class="tag-pill">REST</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Projet_gestio_tache.git" target="_blank">
-              Code GitHub →
+            <a class="link" href="https://github.com/medMansouri25/Projet_gestio_tache.git" target="_blank" data-i18n="projects.viewCode">
+              View Code →
             </a>
           </article>
 
           <article class="card project-card">
-            <h3>Pacman Game (Java)</h3>
-            <p>
-              Implémentation d’un mini-jeu Pacman en Java, mettant en pratique la POO,
-              la gestion d’événements et l’interface graphique.
+            <h3 data-i18n="projects.project4.title">Pacman Game (Java)</h3>
+            <p data-i18n="projects.project4.desc">
+              Implementation of a mini Pacman game in Java, applying OOP concepts,
+              event handling and graphical interface.
             </p>
             <div class="project-tags">
               <span class="tag-pill">Java</span>
               <span class="tag-pill">OOP</span>
               <span class="tag-pill">Jeu</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Pacman-game-2025.git" target="_blank">
-              Code GitHub →
+            <a class="link" href="https://github.com/medMansouri25/Pacman-game-2025.git" target="_blank" data-i18n="projects.viewCode">
+              View Code →
             </a>
           </article>
 
           <article class="card project-card">
-            <h3>Traitement du signal avec Arduino</h3>
-            <p>
-              Projet de 2A combinant capteurs, traitement de signal et restitution,
-              pour découvrir la frontière entre software et hardware.
+            <h3 data-i18n="projects.project5.title">Signal Processing with Arduino</h3>
+            <p data-i18n="projects.project5.desc">
+              Second-year project combining sensors, signal processing and output,
+              to explore the boundary between software and hardware.
             </p>
             <div class="project-tags">
               <span class="tag-pill">Arduino</span>
               <span class="tag-pill">Signal</span>
               <span class="tag-pill">Électronique</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Projet-INFO-2024-2A.git" target="_blank">
-              Code GitHub →
+            <a class="link" href="https://github.com/medMansouri25/Projet-INFO-2024-2A.git" target="_blank" data-i18n="projects.viewCode">
+              View Code →
             </a>
           </article>
 
@@ -288,28 +289,28 @@
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
       <div class="container">
-        <h2 class="section-title">Professional Experience</h2>
-        <p class="section-subtitle">
-          Mon parcours en entreprise et dans la vie associative.
+        <h2 class="section-title" data-i18n="experience.title">Professional Experience</h2>
+        <p class="section-subtitle" data-i18n="experience.subtitle">
+          My professional and associative experience.
         </p>
 
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-year">2024–2027</div>
             <div class="timeline-card">
-              <h3>Apprenti Ingénieur — Covéa (MMA), SIGMA IARD</h3>
-              <p class="timeline-location">Le Mans, France</p>
-              <ul>
-                <li> Paramétrage des produits Assurance IARD. </li>
-                <li>Analyse et gestion d’incidents de production via ServiceNow.</li>
-                <li> Optimisation de l’environnement applicatif.</li>
-                <li>Rédaction des spécifications et traitement des demandes d’évolution des pilotes métier (DEMTRA).</li>
-                <li> Élaboration et exécution des plans de test post développement. </li>
-                <li>Suivi des demandes : respect des budgets, priorisation et délais de livraison.</li>
-                <li>Contribution au développement d’outils internes en Smalltalk.</li>
-                <li> Interventions sur la base de données (mises à jour produits maintenance).</li>
-
+              <h3 data-i18n="experience.job1.title">Engineering Apprentice — Covéa (MMA), SIGMA IARD</h3>
+              <p class="timeline-location" data-i18n="experience.job1.location">Le Mans, France</p>
+              <ul data-i18n-list="experience.job1.tasks">
+                <li>Configuration of Property & Casualty insurance products.</li>
+                <li>Analysis and management of production incidents via <strong>ServiceNow</strong>.</li>
+                <li>Optimization of the application environment.</li>
+                <li>Writing specifications and handling change requests from business stakeholders (DEMTRA) via <strong>Jira</strong>.</li>
+                <li>Development and execution of post-development <strong>test plans</strong>.</li>
+                <li>Request tracking: budget compliance, prioritization and delivery deadlines.</li>
+                <li>Contribution to the development of internal tools in <strong>Smalltalk</strong>.</li>
+                <li>Database interventions (product updates and maintenance).</li>
               </ul>
+
               <div class="project-tags">
                 <span class="tag-pill">Smalltalk</span>
                 <span class="tag-pill">ServiceNow</span>
@@ -317,7 +318,6 @@
                 <span class="tag-pill">Agile</span>
                 <span class="tag-pill">Jenkins</span>
                 <span class="tag-pill">cycle en V</span>
-                <span class="tag-pill">ServiceNow</span>
               </div>
             </div>
           </div>
@@ -325,11 +325,11 @@
           <div class="timeline-item">
             <div class="timeline-year">2023–2024</div>
             <div class="timeline-card">
-              <h3>Agent au service universitaire– SUIO-IP</h3>
-              <p class="timeline-location">Le Mans, France</p>
-              <ul>
-                <li>Aide logistique lors 6 événements.</li>
-                <li>Guide lors des journées porte ouvert de plus 100 visiteurs.</li>
+              <h3 data-i18n="experience.job2.title">University Service Agent — SUIO-IP</h3>
+              <p class="timeline-location" data-i18n="experience.job2.location">Le Mans, France</p>
+              <ul data-i18n-list="experience.job2.tasks">
+                <li>Logistical support during 6 events.</li>
+                <li>Guide during open days for over 100 visitors.</li>
               </ul>
               <div class="project-tags">
                 <span class="tag-pill">Communication</span>
@@ -338,18 +338,16 @@
               </div>
             </div>
           </div>
-          <div class="timeline">
+
           <div class="timeline-item">
             <div class="timeline-year">2021-2022</div>
             <div class="timeline-card">
-              <h3>Animateur à l’associattion miroir pour l’enfant autiste</h3>
-              <p class="timeline-location">Maroc</p>
-              <ul>
-                <li> Orientation de 49 personnes. </li>
-                <li>Encadrement de diverses activités.</li>
+              <h3 data-i18n="experience.job3.title">Activity Leader at Miroir Association for Autistic Children</h3>
+              <p class="timeline-location" data-i18n="experience.job3.location">Morocco</p>
+              <ul data-i18n-list="experience.job3.tasks">
+                <li>Guidance and supervision of 49 individuals.</li>
+                <li>Facilitation of various activities.</li>
               </ul>
-
-              </div>
             </div>
           </div>
 
@@ -360,50 +358,62 @@
     <!-- EDUCATION -->
     <section id="education" class="section">
       <div class="container">
-        <h2 class="section-title">Education</h2>
-        <p class="section-subtitle">
-          Mon parcours académique.
+        <h2 class="section-title" data-i18n="education.title">Education</h2>
+        <p class="section-subtitle" data-i18n="education.subtitle">
+          My academic background.
         </p>
 
         <div class="edu-grid">
           <article class="edu-card">
-            <h3>Cycle Ingénieur Informatique</h3>
-            <p class="edu-school">ENSIM — Université du Mans</p>
-            <p class="edu-dates">2024 – 2027</p>
-            <p>
-              Formation d’ingénieur en informatique avec focus sur le développement logiciel,
-              les systèmes, les réseaux et les architectures Cloud.
+            <h3 data-i18n="education.degree1.title">Computer Engineering Program</h3>
+            <p class="edu-school" data-i18n="education.degree1.school">École Nationale Supérieure d'Ingénieurs du Mans — Université du Mans</p>
+            <p class="edu-dates" data-i18n="education.degree1.dates">2024 - 2027</p>
+            <p data-i18n="education.degree1.intro">
+              Comprehensive training in computer science and engineering, developing strong problem-solving 
+              and analytical thinking skills through:
             </p>
+            <ul data-i18n-list="education.degree1.courses">
+              <li>Object-oriented and concurrent programming</li>
+              <li>Engineering mathematics</li>
+              <li>Signal processing</li>
+              <li>Back-end and front-end development</li>
+              <li>Digital electronics and combinatorial logic</li>
+              <li>User interface design</li>
+              <li>Business management fundamentals</li>
+              <li>Network architecture and operating systems</li>
+            </ul>
           </article>
 
           <article class="edu-card">
-            <h3>Cycle préparatoire / Licence scientifique</h3>
-            <p class="edu-school">ENSIM / Université</p>
-            <p class="edu-dates">Avant 2024</p>
-            <p>
-              Bases solides en mathématiques, physique et informatique, avec premiers projets
-              en programmation et systèmes embarqués.
+            <h3 data-i18n="education.degree2.title">Integrated Preparatory Cycle / Bachelor's Degree in Science</h3>
+            <p class="edu-school" data-i18n="education.degree2.school">ENSIM / University</p>
+            <p class="edu-dates" data-i18n="education.degree2.dates">2022 - 2024</p>
+            <p data-i18n="education.degree2.desc">
+              Strong foundation in mathematics, physics and computer science, with first projects
+              in programming and embedded systems.
             </p>
           </article>
         </div>
 
         <div class="edu-extra">
           <div>
-            <h3>Certifications (visées / en cours)</h3>
+            <h3 data-i18n="education.certifications">Certifications (targeted / in progress)</h3>
             <div class="project-tags">
-              <span class="tag-pill">Azure Fundamentals</span>
+              <span class="tag-pill">Azure Fundamentals AZ-900</span>
               <span class="tag-pill">PSM-I (Scrum)</span>
               <span class="tag-pill">TOEIC B2/C1</span>
+              <span class="tag-pill">Introduction to front-end development (Meta)</span>
+              <span class="tag-pill">Prompt Engineering for ChatGPT (Vanderbilt University)</span>
             </div>
           </div>
           <div>
-            <h3>Soft Skills</h3>
+            <h3 data-i18n="education.softSkills">Soft Skills</h3>
             <div class="project-tags">
               <span class="tag-pill">Communication</span>
-              <span class="tag-pill">Travail en équipe</span>
-              <span class="tag-pill">Organisation</span>
-              <span class="tag-pill">Adaptabilité</span>
-              <span class="tag-pill">Autonomie</span>
+              <span class="tag-pill" data-i18n="education.softSkillsList.1">Teamwork</span>
+              <span class="tag-pill" data-i18n="education.softSkillsList.2">Organization</span>
+              <span class="tag-pill" data-i18n="education.softSkillsList.3">Adaptability</span>
+              <span class="tag-pill" data-i18n="education.softSkillsList.4">Autonomy</span>
             </div>
           </div>
         </div>
@@ -413,19 +423,19 @@
     <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
-        <h2 class="section-title">Get in Touch</h2>
-        <p class="section-subtitle">
-          N’hésitez pas à me contacter pour un échange, une opportunité ou un projet.
+        <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+        <p class="section-subtitle" data-i18n="contact.subtitle">
+          Feel free to contact me for a discussion, an opportunity or a project.
         </p>
 
         <div class="contact-grid">
           <div class="contact-card">
-            <h3>Contact Information</h3>
-            <p><strong>Email :</strong> <a href="mailto:mansouri.med25@outlook.fr">mansouri.med25@outlook.fr</a></p>
-            <p><strong>Localisation :</strong> France</p>
+            <h3 data-i18n="contact.contactInfo">Contact Information</h3>
+            <p><strong data-i18n="contact.email">Email:</strong> <a href="mailto:mansouri.med25@outlook.fr">mansouri.med25@outlook.fr</a></p>
+            <p><strong data-i18n="contact.location">Location:</strong> <span data-i18n="contact.locationValue">France</span></p>
           </div>
           <div class="contact-card">
-            <h3>Connect With Me</h3>
+            <h3 data-i18n="contact.connect">Connect With Me</h3>
             <p><a href="https://www.linkedin.com/in/mohammed-m-47475526b/" target="_blank">LinkedIn</a></p>
             <p><a href="https://github.com/medMansouri25" target="_blank">GitHub</a></p>
           </div>
@@ -436,11 +446,14 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© <span id="year"></span> Mohammed Mansouri — All Rights Reserved</p>
+    <p>© <span id="year"></span> Mohammed Mansouri — <span data-i18n="footer.rights">All Rights Reserved</span></p>
   </footer>
 
   <!-- THEME TOGGLE -->
   <button id="themeToggle" class="theme-toggle">🌙</button>
+
+  <!-- TRADUCTIONS -->
+  <script src="translations.js"></script>
 
   <script>
     // année dans le footer
