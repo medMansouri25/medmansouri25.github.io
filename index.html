@@ -48,7 +48,7 @@
             and Cloud technologies.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-neutral" href="/cdn-cgi/l/email-protection#80ede1eef3eff5f2e9aeede5e4b2b5c0eff5f4ecefefebaee6f2" data-i18n="hero.emailBtn">Email</a>
+            <a class="btn btn-neutral" href="mailto:mansouri.med25@outlook.fr" data-i18n="hero.emailBtn">Email</a>
           </div>
           <div class="hero-socials">
             <a href="https://github.com/medMansouri25" target="_blank">GitHub</a>
@@ -439,7 +439,7 @@
         <div class="contact-grid">
           <div class="contact-card">
             <h3 data-i18n="contact.contactInfo">Contact Information</h3>
-            <p><strong data-i18n="contact.email">Email:</strong> <a href="/cdn-cgi/l/email-protection#e489858a978b91968dca898180d6d1a48b9190888b8b8fca8296"><span class="__cf_email__" data-cfemail="f39e929d809c86819add9e9697c1c6b39c86879f9c9c98dd9581">[email&#160;protected]</span></a></p>
+            <p><strong data-i18n="contact.email">Email:</strong> <a href="mailto:mansouri.med25@outlook.fr">mansouri.med25@outlook.fr</a></p>
             <p><strong data-i18n="contact.location">Location:</strong> <span data-i18n="contact.locationValue">France</span></p>
           </div>
           <div class="contact-card">
@@ -461,7 +461,7 @@
   <button id="themeToggle" class="theme-toggle">🌙</button>
 
   <!-- TRADUCTIONS -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="translations.js"></script>
+  <script src="translations.js"></script>
 
   <script>
     // Mobile Menu Toggle
@@ -504,9 +504,17 @@
       document.documentElement.setAttribute("data-theme", saved);
       button.textContent = saved === "dark" ? "🌞" : "🌙";
     } else {
-      document.documentElement.setAttribute("data-theme", "light"); // light par défaut
+      document.documentElement.setAttribute("data-theme", "light");
       button.textContent = "🌙";
     }
 
     button.addEventListener("click", () => {
-      const current = document.docum
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+      button.textContent = next === "dark" ? "🌞" : "🌙";
+    });
+  </script>
+</body>
+</html>
