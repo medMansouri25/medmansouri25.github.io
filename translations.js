@@ -2,6 +2,15 @@
 
 const translations = {
   fr: {
+    // Niveaux de compétence
+    levels: {
+      "5": "Notions complètes",
+      "4": "Autonomie",
+      "3": "Autonomie partielle",
+      "2": "Notions de base",
+      "1": "En progrès"
+    },
+
     // Navigation
     nav: {
       home: "Accueil",
@@ -9,6 +18,7 @@ const translations = {
       skills: "Compétences",
       projects: "Projets",
       experience: "Expérience",
+      competencesPro: "Compétences Pro",
       education: "Formation",
       contact: "Contact"
     },
@@ -108,7 +118,92 @@ const translations = {
         ]
       }
     },
-    
+
+    // Compétences Professionnelles Section
+    competencesPro: {
+      title: "Compétences Professionnelles",
+      subtitle: "Compétences développées lors de mon alternance chez Covéa (MMA)",
+
+      comp1: {
+        title: "Organisation et gestion du travail",
+        badge: "Autonome",
+        situationsTitle: "Situations professionnelles mobilisées",
+        situations: [
+          "Participation au processus de Terme et au TAB (Terme à Blanc)",
+          "Gestion simultanée de : incidents Run, demandes de travaux (DEMTRA), assistances gestionnaire produit (ASSGP)",
+          "Participation aux daily terme et suivi d'avancement"
+        ],
+        competencesTitle: "Compétences acquises",
+        competences: [
+          "Hiérarchisation des priorités",
+          "Respect des échéances",
+          "Travail en équipe"
+        ],
+        evaluation: " Durant ces travaux, j'ai été en mesure de gérer mes activités de manière autonome, en respectant les priorités définies (Run > Terme > DEMTRA) et les délais imposés. Mon travail s'est déroulé avec un encadrement ponctuel de ma tutrice, principalement pour la validation des décisions et des livrables."
+      },
+
+      comp2: {
+        title: "Démarche structurée d'analyse",
+        badge: "Autonome",
+        situationsTitle: "Situations professionnelles mobilisées",
+        situations: [
+          "Analyse de demandes de travaux via Jira DEMTRA",
+          "Analyse et traitement d'incidents Run via ServiceNow",
+          "Reproduction d'erreurs en environnement de test",
+          "Rédaction de spécifications et plans de test"
+        ],
+        competencesTitle: "Compétences acquises",
+        competences: [
+          "Analyse fonctionnelle",
+          "Investigation méthodique",
+          "Proposition de solutions"
+        ],
+        evaluation: " J'ai été capable de conduire l'analyse complète des demandes et des incidents de manière autonome, depuis la compréhension du besoin jusqu'aux spécifications et développements. L'intervention de ma tutrice s'est principalement faite pour la validation finale des choix effectués et des livrables produits."
+      },
+
+      comp3: {
+        title: "Mobilisation des ressources",
+        badge: "En progression",
+        situationsTitle: "Situations professionnelles mobilisées",
+        situations: [
+          "Utilisation de Confluence (documentation, bonnes pratiques, normes)",
+          "Échanges via Teams",
+          "Sollicitation ciblée de collègues experts",
+          "Exploitation des guides internes (DEP, normes de nommage)"
+        ],
+        competencesTitle: "Compétences acquises",
+        competences: [
+          "Recherche d'information",
+          "Capitalisation sur l'existant",
+          "Communication professionnelle"
+        ],
+        evaluation: " Un plan de montée en compétences est en cours afin de me familiariser davantage avec les demandes émanant des autres services. Un canal Teams dédié à l'alternance me permet d'exprimer ma compréhension des sujets confiés et de solliciter, si nécessaire, des éclaircissements."
+      },
+
+      comp4: {
+        title: "Développement et conception d'outils",
+        badge: "En progression",
+        situationsTitle: "Situations professionnelles mobilisées",
+        situations: [
+          "Navigation dans les packages, classes et méthodes (architecture du code)",
+          "Analyse de code existant pour identifier les points d'intervention",
+          "Application des normes de qualité et de lisibilité",
+          "Traitement de demandes ASSGP (corrections fonctionnelles, ergonomiques, accessibilité)",
+          "Amélioration de l'IHM (libellés, boutons, tableaux)",
+          "Conception d'un nouvel outil : cahier des charges, maquettes Figma, modélisation UML"
+        ],
+        competencesTitle: "Compétences acquises",
+        competences: [
+          "Lecture de code",
+          "Smalltalk",
+          "Conception fonctionnelle",
+          "UML / Figma",
+          "Accessibilité"
+        ],
+        evaluation: " Je ne dispose pas encore d'une autonomie suffisante sur certaines tâches de développement en Smalltalk, notamment lors d'interventions sur des portions de code complexes. Des collègues expérimentés m'apportent des explications détaillées, ce qui me permet de développer progressivement les bons réflexes. Ces accompagnements s'inscrivent dans mon plan de montée en compétences."
+      }
+    },
+
     // Education Section
     education: {
       title: "Formation",
@@ -166,6 +261,15 @@ const translations = {
   },
   
   en: {
+    // Skill levels
+    levels: {
+      "5": "Complete mastery",
+      "4": "Proficiency",
+      "3": "Intermediate",
+      "2": "Basic knowledge",
+      "1": "In progress"
+    },
+
     // Navigation
     nav: {
       home: "Home",
@@ -173,6 +277,7 @@ const translations = {
       skills: "Skills",
       projects: "Projects",
       experience: "Experience",
+      competencesPro: "Professional Skills",
       education: "Education",
       contact: "Contact"
     },
@@ -272,7 +377,92 @@ const translations = {
         ]
       }
     },
-    
+
+    // Professional Skills Section
+    competencesPro: {
+      title: "Professional Skills",
+      subtitle: "Skills developed during my apprenticeship at Covéa (MMA)",
+
+      comp1: {
+        title: "Work organization and management",
+        badge: "Autonomous",
+        situationsTitle: "Professional situations mobilized",
+        situations: [
+          "Participation in the Term process and TAB (Blank Term)",
+          "Simultaneous management of: Run incidents, work requests (DEMTRA), product manager assistance (ASSGP)",
+          "Participation in daily terms and progress monitoring"
+        ],
+        competencesTitle: "Skills acquired",
+        competences: [
+          "Priority setting",
+          "Deadline management",
+          "Teamwork"
+        ],
+        evaluation: "During this work, I was able to manage my activities autonomously, respecting defined priorities (Run > Term > DEMTRA) and imposed deadlines. My work was carried out with occasional supervision from my tutor, mainly for validation of decisions and deliverables."
+      },
+
+      comp2: {
+        title: "Structured analysis approach",
+        badge: "Autonomous",
+        situationsTitle: "Professional situations mobilized",
+        situations: [
+          "Analysis of work requests via Jira DEMTRA",
+          "Analysis and processing of Run incidents via ServiceNow",
+          "Error reproduction in test environment",
+          "Writing specifications and test plans"
+        ],
+        competencesTitle: "Skills acquired",
+        competences: [
+          "Functional analysis",
+          "Methodical investigation",
+          "Solution proposal"
+        ],
+        evaluation: "I was able to conduct complete analysis of requests and incidents autonomously, from understanding the need to specifications and developments. My tutor's intervention was mainly for final validation of choices made and deliverables produced."
+      },
+
+      comp3: {
+        title: "Resource mobilization",
+        badge: "In progress",
+        situationsTitle: "Professional situations mobilized",
+        situations: [
+          "Use of Confluence (documentation, best practices, standards)",
+          "Exchanges via Teams",
+          "Targeted consultation with expert colleagues",
+          "Exploitation of internal guides (DEP, naming standards)"
+        ],
+        competencesTitle: "Skills acquired",
+        competences: [
+          "Information research",
+          "Knowledge capitalization",
+          "Professional communication"
+        ],
+        evaluation: "A skills development plan is underway to familiarize myself further with requests from other services. A Teams channel dedicated to apprenticeship allows me to express my understanding of assigned topics and request clarifications if needed."
+      },
+
+      comp4: {
+        title: "Tool development and design",
+        badge: "In progress",
+        situationsTitle: "Professional situations mobilized",
+        situations: [
+          "Navigation through packages, classes and methods (code architecture)",
+          "Analysis of existing code to identify intervention points",
+          "Application of quality and readability standards",
+          "Processing ASSGP requests (functional, ergonomic, accessibility corrections)",
+          "UI improvements (labels, buttons, tables)",
+          "Design of a new tool: specifications, Figma mockups, UML modeling"
+        ],
+        competencesTitle: "Skills acquired",
+        competences: [
+          "Code reading",
+          "Smalltalk",
+          "Functional design",
+          "UML / Figma",
+          "Accessibility"
+        ],
+        evaluation: "I do not yet have sufficient autonomy on certain Smalltalk development tasks, especially when intervening on complex code portions. Experienced colleagues provide detailed explanations, allowing me to gradually develop good reflexes. These supports are part of my skills development plan."
+      }
+    },
+
     // Education Section
     education: {
       title: "Education",

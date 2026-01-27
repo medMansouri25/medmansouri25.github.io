@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,23 +12,26 @@
   <header class="topbar">
     <div class="container nav">
       <a class="logo" href="#hero">MMA</a>
-      
+
       <!-- Mobile Menu Toggle -->
       <button class="mobile-menu-toggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      
-      <nav class="nav-links">
-        <a href="#hero" data-i18n="nav.home">Home</a>
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#skills" data-i18n="nav.skills">Skills</a>
-        <a href="#projects" data-i18n="nav.projects">Projects</a>
-        <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <a href="#education" data-i18n="nav.education">Education</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
-      </nav>
+
+      <div class="nav-right">
+        <nav class="nav-links">
+          <a href="#hero" data-i18n="nav.home">Home</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#skills" data-i18n="nav.skills">Skills</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#competences-pro" data-i18n="nav.competencesPro">Compétences Pro</a>
+          <a href="#education" data-i18n="nav.education">Education</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -107,11 +110,11 @@
               <h3 class="skill-title" data-i18n="skills.programming">Programming Languages</h3>
             </div>
             <div class="skill-tags">
-              <span class="tag-pill">Java</span>
-              <span class="tag-pill">C</span>
-              <span class="tag-pill">Python</span>
-              <span class="tag-pill">Smalltalk</span>
-              <span class="tag-pill">MATLAB</span>
+              <span class="tag-pill" data-level="4">Java <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">C <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="3">Python <small>• Autonomie partielle (3/5)</small></span>
+              <span class="tag-pill" data-level="4">Smalltalk <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="3">MATLAB <small>• Autonomie partielle (3/5)</small></span>
             </div>
           </article>
 
@@ -121,14 +124,14 @@
               <h3 class="skill-title" data-i18n="skills.webDev">Web Development</h3>
             </div>
             <div class="skill-tags">
-              <span class="tag-pill">HTML</span>
-              <span class="tag-pill">CSS</span>
-              <span class="tag-pill">JavaScript</span>
-              <span class="tag-pill">Node.js</span>
-              <span class="tag-pill">Express</span>
-              <span class="tag-pill">Angular</span>
-              <span class="tag-pill">React (basics)</span>
-              <span class="tag-pill">Bootstrap</span>
+              <span class="tag-pill" data-level="4">HTML <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">CSS <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">JavaScript <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">Node.js <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">Express <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">Angular <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="2">React <small>• Notions de base (2/5)</small></span>
+              <span class="tag-pill" data-level="3">Bootstrap <small>• Autonomie partielle (3/5)</small></span>
             </div>
           </article>
 
@@ -138,10 +141,10 @@
               <h3 class="skill-title" data-i18n="skills.backend">Backend & Databases</h3>
             </div>
             <div class="skill-tags">
-              <span class="tag-pill">REST API</span>
-              <span class="tag-pill">SQL</span>
-              <span class="tag-pill">MongoDB</span>
-              <span class="tag-pill">JPA / H2</span>
+              <span class="tag-pill" data-level="2">REST API <small>• Notions de base (2/5)</small></span>
+              <span class="tag-pill" data-level="4">SQL <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="2">MongoDB <small>• Notions de base (2/5)</small></span>
+              <span class="tag-pill" data-level="2">JPA / H2 <small>• Notions de base (2/5)</small></span>
             </div>
           </article>
 
@@ -151,14 +154,14 @@
               <h3 class="skill-title" data-i18n="skills.devops">DevOps & Tools</h3>
             </div>
             <div class="skill-tags">
-              <span class="tag-pill">Git</span>
-              <span class="tag-pill">GitHub</span>
-              <span class="tag-pill">Linux</span>
-              <span class="tag-pill">CI/CD (basics)</span>
-              <span class="tag-pill">Jira</span>
-              <span class="tag-pill">Confluence</span>
-              <span class="tag-pill">Postman</span>
-              <span class="tag-pill">VS Code</span>
+              <span class="tag-pill" data-level="4">Git <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">GitHub <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="3">Linux <small>• Autonomie partielle (3/5)</small></span>
+              <span class="tag-pill" data-level="2">CI/CD <small>• Notions de base (2/5)</small></span>
+              <span class="tag-pill" data-level="4">Jira <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">Confluence <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">Postman <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="4">VS Code <small>• Autonomie (4/5)</small></span>
             </div>
           </article>
 
@@ -168,12 +171,10 @@
               <h3 class="skill-title" data-i18n="skills.design">Design & Modelling</h3>
             </div>
             <div class="skill-tags">
-              <span class="tag-pill">UML</span>
-              <span class="tag-pill">OOP</span>
-              <span class="tag-pill">SolidWorks</span>
-              <span class="tag-pill">Architecture logicielle</span>
-              <span class="tag-pill">Figma</span>
-              <span class="tag-pill">Responsive Design</span>
+              <span class="tag-pill" data-level="5">UML <small>• Notions complètes (5/5)</small></span>
+              <span class="tag-pill" data-level="4">OOP <small>• Autonomie (4/5)</small></span>
+              <span class="tag-pill" data-level="2">Figma <small>• Notions de base (2/5)</small></span>
+              <span class="tag-pill" data-level="3">Responsive Design <small>• Autonomie partielle (3/5)</small></span>
             </div>
           </article>
 
@@ -183,12 +184,11 @@
               <h3 class="skill-title" data-i18n="skills.embedded">Embedded & Systems</h3>
             </div>
             <div class="skill-tags">
-              <span class="tag-pill">Arduino</span>
-              <span class="tag-pill">STM32</span>
-              <span class="tag-pill">CubeMX</span>
-              <span class="tag-pill">ARM</span>
-              <span class="tag-pill">TCP/UDP</span>
-              <span class="tag-pill">Sockets (C / Java)</span>
+              <span class="tag-pill" data-level="3">Arduino <small>• Autonomie partielle (3/5)</small></span>
+              <span class="tag-pill" data-level="3">STM32 <small>• Autonomie partielle (3/5)</small></span>
+              <span class="tag-pill" data-level="3">ARM <small>• Autonomie partielle (3/5)</small></span>
+              <span class="tag-pill" data-level="3">TCP/UDP <small>• Autonomie partielle (3/5)</small></span>
+              <span class="tag-pill" data-level="2">Sockets (C / Java) <small>• Notions de base (2/5)</small></span>
             </div>
           </article>
 
@@ -206,7 +206,7 @@
 
         <div class="grid projects-grid">
 
-          <article class="card project-card">
+          <article class="card project-card" data-github="https://github.com/medMansouri25/Serveur-client-in-linux">
             <h3 data-i18n="projects.project1.title">Client / Server Linux (C)</h3>
             <p data-i18n="projects.project1.desc">
               Multi-client TCP server and client in C on Linux,
@@ -219,12 +219,10 @@
               <span class="tag-pill">Sockets</span>
               <span class="tag-pill">TCP</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Serveur-client-in-linux-.git" target="_blank" data-i18n="projects.viewCode">
-              View Code →
-            </a>
+            <span class="link" data-i18n="projects.viewCode">View Code →</span>
           </article>
 
-          <article class="card project-card">
+          <article class="card project-card" data-github="https://github.com/medMansouri25/Projet_Back_End_API-1">
             <h3 data-i18n="projects.project2.title">API REST Rhum (Node.js + MongoDB)</h3>
             <p data-i18n="projects.project2.desc">
               Complete backend to manage Rums, Recipes and Users,
@@ -236,12 +234,10 @@
               <span class="tag-pill">MongoDB</span>
               <span class="tag-pill">JWT</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Projet_Back_End_API-1.git" target="_blank" data-i18n="projects.viewCode">
-              View Code →
-            </a>
+            <span class="link" data-i18n="projects.viewCode">View Code →</span>
           </article>
 
-          <article class="card project-card">
+          <article class="card project-card" data-github="https://github.com/medMansouri25/Projet_gestio_tache">
             <h3 data-i18n="projects.project3.title">Task Manager (Angular + Spring)</h3>
             <p data-i18n="projects.project3.desc">
               Task management application built with Angular and a Spring Boot API
@@ -253,12 +249,10 @@
               <span class="tag-pill">JPA</span>
               <span class="tag-pill">REST</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Projet_gestio_tache.git" target="_blank" data-i18n="projects.viewCode">
-              View Code →
-            </a>
+            <span class="link" data-i18n="projects.viewCode">View Code →</span>
           </article>
 
-          <article class="card project-card">
+          <article class="card project-card" data-github="https://github.com/medMansouri25/Pacman-game-2025">
             <h3 data-i18n="projects.project4.title">Pacman Game (Java)</h3>
             <p data-i18n="projects.project4.desc">
               Implementation of a mini Pacman game in Java, applying OOP concepts,
@@ -268,12 +262,10 @@
               <span class="tag-pill">Java</span>
               <span class="tag-pill">OOP</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Pacman-game-2025.git" target="_blank" data-i18n="projects.viewCode">
-              View Code →
-            </a>
+            <span class="link" data-i18n="projects.viewCode">View Code →</span>
           </article>
 
-          <article class="card project-card">
+          <article class="card project-card" data-github="https://github.com/medMansouri25/Projet-INFO-2024-2A">
             <h3 data-i18n="projects.project5.title">Signal Processing with Arduino</h3>
             <p data-i18n="projects.project5.desc">
               Second-year project combining sensors, signal processing and output,
@@ -284,9 +276,7 @@
               <span class="tag-pill">Signal</span>
               <span class="tag-pill">Électronics</span>
             </div>
-            <a class="link" href="https://github.com/medMansouri25/Projet-INFO-2024-2A.git" target="_blank" data-i18n="projects.viewCode">
-              View Code →
-            </a>
+            <span class="link" data-i18n="projects.viewCode">View Code →</span>
           </article>
 
         </div>
@@ -357,6 +347,151 @@
       </div>
     </section>
 
+    <!-- COMPÉTENCES PROFESSIONNELLES -->
+    <section id="competences-pro" class="section">
+      <div class="container">
+        <h2 class="section-title" data-i18n="competencesPro.title">Compétences Professionnelles</h2>
+        <p class="section-subtitle" data-i18n="competencesPro.subtitle">
+          Compétences développées lors de mon alternance chez Covéa (MMA)
+        </p>
+
+        <div class="pro-skills-grid">
+
+          <!-- Compétence 1 -->
+          <article class="pro-skill-card">
+            <div class="pro-skill-header">
+              <div class="pro-skill-icon">📊</div>
+              <div>
+                <h3 data-i18n="competencesPro.comp1.title">Organisation et gestion du travail</h3>
+                <span class="pro-badge pro-badge-autonome" data-i18n="competencesPro.comp1.badge">Autonome</span>
+              </div>
+            </div>
+
+            <div class="pro-skill-content">
+              <h4 data-i18n="competencesPro.comp1.situationsTitle">Situations professionnelles mobilisées</h4>
+              <ul>
+                <li data-i18n="competencesPro.comp1.situations.0">Participation au processus de Terme et au TAB (Terme à Blanc)</li>
+                <li data-i18n="competencesPro.comp1.situations.1">Gestion simultanée de : incidents Run, demandes de travaux (DEMTRA), assistances gestionnaire produit (ASSGP)</li>
+                <li data-i18n="competencesPro.comp1.situations.2">Participation aux daily terme et suivi d'avancement</li>
+              </ul>
+
+              <h4 data-i18n="competencesPro.comp1.competencesTitle">Compétences acquises</h4>
+              <div class="project-tags">
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp1.competences.0">Hiérarchisation des priorités</span>
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp1.competences.1">Respect des échéances</span>
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp1.competences.2">Travail en équipe</span>
+              </div>
+
+              <div class="pro-evaluation" data-i18n="competencesPro.comp1.evaluation">
+              Durant ces travaux, j'ai été en mesure de gérer mes activités de manière autonome, en respectant les priorités définies (Run > Terme > DEMTRA) et les délais imposés. Mon travail s'est déroulé avec un encadrement ponctuel de ma tutrice, principalement pour la validation des décisions et des livrables.
+              </div>
+            </div>
+          </article>
+
+          <!-- Compétence 2 -->
+          <article class="pro-skill-card">
+            <div class="pro-skill-header">
+              <div class="pro-skill-icon">🔍</div>
+              <div>
+                <h3 data-i18n="competencesPro.comp2.title">Démarche structurée d'analyse</h3>
+                <span class="pro-badge pro-badge-autonome" data-i18n="competencesPro.comp2.badge">Autonome</span>
+              </div>
+            </div>
+
+            <div class="pro-skill-content">
+              <h4 data-i18n="competencesPro.comp2.situationsTitle">Situations professionnelles mobilisées</h4>
+              <ul>
+                <li data-i18n="competencesPro.comp2.situations.0">Analyse de demandes de travaux via Jira DEMTRA</li>
+                <li data-i18n="competencesPro.comp2.situations.1">Analyse et traitement d'incidents Run via ServiceNow</li>
+                <li data-i18n="competencesPro.comp2.situations.2">Reproduction d'erreurs en environnement de test</li>
+                <li data-i18n="competencesPro.comp2.situations.3">Rédaction de spécifications et plans de test</li>
+              </ul>
+
+              <h4 data-i18n="competencesPro.comp2.competencesTitle">Compétences acquises</h4>
+              <div class="project-tags">
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp2.competences.0">Analyse fonctionnelle</span>
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp2.competences.1">Investigation méthodique</span>
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp2.competences.2">Proposition de solutions</span>
+              </div>
+
+              <div class="pro-evaluation" data-i18n="competencesPro.comp2.evaluation">
+                 J'ai été capable de conduire l'analyse complète des demandes et des incidents de manière autonome, depuis la compréhension du besoin jusqu'aux spécifications et développements. L'intervention de ma tutrice s'est principalement faite pour la validation finale des choix effectués et des livrables produits.
+              </div>
+            </div>
+          </article>
+
+          <!-- Compétence 3 -->
+          <article class="pro-skill-card">
+            <div class="pro-skill-header">
+              <div class="pro-skill-icon">🤝</div>
+              <div>
+                <h3 data-i18n="competencesPro.comp3.title">Mobilisation des ressources</h3>
+                <span class="pro-badge pro-badge-progression" data-i18n="competencesPro.comp3.badge">En progression</span>
+              </div>
+            </div>
+
+            <div class="pro-skill-content">
+              <h4 data-i18n="competencesPro.comp3.situationsTitle">Situations professionnelles mobilisées</h4>
+              <ul>
+                <li data-i18n="competencesPro.comp3.situations.0">Utilisation de Confluence (documentation, bonnes pratiques, normes)</li>
+                <li data-i18n="competencesPro.comp3.situations.1">Échanges via Teams</li>
+                <li data-i18n="competencesPro.comp3.situations.2">Sollicitation ciblée de collègues experts</li>
+                <li data-i18n="competencesPro.comp3.situations.3">Exploitation des guides internes (DEP, normes de nommage)</li>
+              </ul>
+
+              <h4 data-i18n="competencesPro.comp3.competencesTitle">Compétences acquises</h4>
+              <div class="project-tags">
+                <span class="tag-pill" data-level="3" data-i18n="competencesPro.comp3.competences.0">Recherche d'information</span>
+                <span class="tag-pill" data-level="3" data-i18n="competencesPro.comp3.competences.1">Capitalisation sur l'existant</span>
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp3.competences.2">Communication professionnelle</span>
+              </div>
+
+              <div class="pro-evaluation" data-i18n="competencesPro.comp3.evaluation">
+                Un plan de montée en compétences est en cours afin de me familiariser davantage avec les demandes émanant des autres services. Un canal Teams dédié à l'alternance me permet d'exprimer ma compréhension des sujets confiés et de solliciter, si nécessaire, des éclaircissements.
+              </div>
+            </div>
+          </article>
+
+          <!-- Compétence 4 -->
+          <article class="pro-skill-card">
+            <div class="pro-skill-header">
+              <div class="pro-skill-icon">💻</div>
+              <div>
+                <h3 data-i18n="competencesPro.comp4.title">Développement et conception d'outils</h3>
+                <span class="pro-badge pro-badge-progression" data-i18n="competencesPro.comp4.badge">En progression</span>
+              </div>
+            </div>
+
+            <div class="pro-skill-content">
+              <h4 data-i18n="competencesPro.comp4.situationsTitle">Situations professionnelles mobilisées</h4>
+              <ul>
+                <li data-i18n="competencesPro.comp4.situations.0">Navigation dans les packages, classes et méthodes (architecture du code)</li>
+                <li data-i18n="competencesPro.comp4.situations.1">Analyse de code existant pour identifier les points d'intervention</li>
+                <li data-i18n="competencesPro.comp4.situations.2">Application des normes de qualité et de lisibilité</li>
+                <li data-i18n="competencesPro.comp4.situations.3">Traitement de demandes ASSGP (corrections fonctionnelles, ergonomiques, accessibilité)</li>
+                <li data-i18n="competencesPro.comp4.situations.4">Amélioration de l'IHM (libellés, boutons, tableaux)</li>
+                <li data-i18n="competencesPro.comp4.situations.5">Conception d'un nouvel outil : cahier des charges, maquettes Figma, modélisation UML</li>
+              </ul>
+
+              <h4 data-i18n="competencesPro.comp4.competencesTitle">Compétences acquises</h4>
+              <div class="project-tags">
+                <span class="tag-pill" data-level="3" data-i18n="competencesPro.comp4.competences.0">Lecture de code</span>
+                <span class="tag-pill" data-level="3" data-i18n="competencesPro.comp4.competences.1">Smalltalk</span>
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp4.competences.2">Conception fonctionnelle</span>
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp4.competences.3">UML / Figma</span>
+                <span class="tag-pill" data-level="4" data-i18n="competencesPro.comp4.competences.4">Accessibilité</span>
+              </div>
+
+              <div class="pro-evaluation" data-i18n="competencesPro.comp4.evaluation">
+                Je ne dispose pas encore d'une autonomie suffisante sur certaines tâches de développement en Smalltalk, notamment lors d'interventions sur des portions de code complexes. Des collègues expérimentés m'apportent des explications détaillées, ce qui me permet de développer progressivement les bons réflexes. Ces accompagnements s'inscrivent dans mon plan de montée en compétences.
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
     <!-- EDUCATION -->
     <section id="education" class="section">
       <div class="container">
@@ -411,7 +546,7 @@
           <div>
             <h3 data-i18n="education.softSkills">Soft Skills</h3>
             <div class="project-tags">
-              <span class="tag-pill">Communication</span>
+              <span class="tag-pill" data-i18n="education.softSkillsList.0">Communication</span>
               <span class="tag-pill" data-i18n="education.softSkillsList.1">Teamwork</span>
               <span class="tag-pill" data-i18n="education.softSkillsList.2">Organization</span>
               <span class="tag-pill" data-i18n="education.softSkillsList.3">Adaptability</span>
@@ -458,6 +593,16 @@
   <script src="translations.js"></script>
 
   <script>
+    // Rendre les cartes de projets cliquables
+    document.querySelectorAll('.project-card[data-github]').forEach(card => {
+      card.addEventListener('click', (e) => {
+        const url = card.getAttribute('data-github');
+        if (url) {
+          window.open(url, '_blank');
+        }
+      });
+    });
+
     // Mobile Menu Toggle
     document.addEventListener('DOMContentLoaded', () => {
       const menuToggle = document.querySelector('.mobile-menu-toggle');
@@ -489,6 +634,99 @@
 
     // année dans le footer
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Système de traduction
+    let currentLang = localStorage.getItem('language') || 'fr';
+
+    function applyTranslations(lang) {
+      const t = translations[lang];
+      if (!t) return;
+
+      // Traduire tous les éléments avec data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        const keys = key.split('.');
+        let value = t;
+
+        for (const k of keys) {
+          value = value?.[k];
+        }
+
+        if (value !== undefined) {
+          el.textContent = value;
+        }
+      });
+
+      // Traduire les éléments avec data-i18n-html
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.getAttribute('data-i18n-html');
+        const keys = key.split('.');
+        let value = t;
+
+        for (const k of keys) {
+          value = value?.[k];
+        }
+
+        if (value !== undefined) {
+          el.innerHTML = value;
+        }
+      });
+
+      // Traduire les listes avec data-i18n-list
+      document.querySelectorAll('[data-i18n-list]').forEach(ul => {
+        const key = ul.getAttribute('data-i18n-list');
+        const keys = key.split('.');
+        let value = t;
+
+        for (const k of keys) {
+          value = value?.[k];
+        }
+
+        if (Array.isArray(value)) {
+          const listItems = ul.querySelectorAll('li');
+          value.forEach((text, index) => {
+            if (listItems[index]) {
+              listItems[index].innerHTML = text;
+            }
+          });
+        }
+      });
+
+      // Mettre à jour les niveaux de compétence dans les balises <small>
+      document.querySelectorAll('.tag-pill[data-level] small').forEach(el => {
+        const level = el.closest('.tag-pill').getAttribute('data-level');
+        const levelText = t.levels?.[level];
+        if (levelText) {
+          el.textContent = `• ${levelText} (${level}/5)`;
+        }
+      });
+    }
+
+    // Gestion des boutons de langue
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        currentLang = lang;
+        localStorage.setItem('language', lang);
+
+        // Mettre à jour l'état des boutons
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Appliquer les traductions
+        applyTranslations(lang);
+      });
+    });
+
+    // Initialiser la langue au chargement
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      if (btn.getAttribute('data-lang') === currentLang) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+    applyTranslations(currentLang);
 
     // thème clair par défaut, avec mémorisation
     const button = document.getElementById("themeToggle");
