@@ -957,6 +957,42 @@ ul li {
   font-weight: 600;
 }
 
+/* Groupes UF (Semestre 8) */
+.uf-block {
+  margin-bottom: 3rem;
+}
+
+.uf-block:last-child {
+  margin-bottom: 0;
+}
+
+.uf-group-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 3px solid var(--accent);
+  display: inline-block;
+}
+
+.uf-code {
+  display: inline-block;
+  background: var(--accent-light);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.pro-skill-content p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .pro-skills-grid {
