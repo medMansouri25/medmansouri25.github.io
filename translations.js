@@ -47,7 +47,7 @@ const translations = {
       whoAmI: "Qui suis-je ?",
       intro: "Je suis élève ingénieur en informatique à l'ENSIM (Le Mans), en apprentissage, diplômé en 2027. Depuis 2024, j'allie chez Covéa / MMA analyse métier, développement et support de production dans l'assurance, et je pilote un projet d'automatisation.",
       passion: "Chez <strong>Marsa Maroc</strong>, j'ai mené de bout en bout un projet d'<strong>IA</strong> mis en production au port de Casablanca : vision par ordinateur (<strong>YOLO11</strong>, <strong>EasyOCR</strong>), API <strong>Flask</strong>, déploiement continu avec <strong>Docker</strong> et <strong>GitHub Actions</strong>. J'aime faire le lien entre les équipes métier et la technique : recueillir le besoin, spécifier, développer, puis livrer.",
-      interests: "Je souhaite rejoindre une <strong>entreprise marocaine en transformation digitale</strong>, en <strong>CDI dès septembre 2027</strong>. Je me prépare actuellement à la certification <strong>AWS Solutions Architect – Associate</strong>.",
+      interests: "Je souhaite rejoindre une <strong>entreprise en transformation digitale</strong>, en <strong>CDI dès septembre 2027</strong>. Je me prépare actuellement à la certification <strong>AWS Solutions Architect – Associate</strong>.",
       extra: "<strong>Langues :</strong> arabe (langue maternelle), français (courant), anglais (B2, Linguaskill), espagnol (A2). <strong>Centres d'intérêt :</strong> golf, musique, voyages et découverte d'autres cultures."
     },
     
@@ -262,7 +262,7 @@ const translations = {
       whoAmI: "Who am I?",
       intro: "I am a computer engineering student at ENSIM (Le Mans), in a work-study program, graduating in 2027. Since 2024 at Covéa / MMA, I have combined business analysis, development and production support in insurance, and I lead an automation project.",
       passion: "At <strong>Marsa Maroc</strong>, I led an <strong>AI</strong> project end to end, now in production at the port of Casablanca: computer vision (<strong>YOLO11</strong>, <strong>EasyOCR</strong>), a <strong>Flask</strong> API, and continuous deployment with <strong>Docker</strong> and <strong>GitHub Actions</strong>. I enjoy bridging business teams and engineering: gathering needs, writing specifications, building, then delivering.",
-      interests: "I aim to join a <strong>Moroccan company undergoing digital transformation</strong>, in a <strong>permanent position from September 2027</strong>. I am currently preparing for the <strong>AWS Solutions Architect – Associate</strong> certification.",
+      interests: "I aim to join a <strong>company undergoing digital transformation</strong>, in a <strong>permanent position from September 2027</strong>. I am currently preparing for the <strong>AWS Solutions Architect – Associate</strong> certification.",
       extra: "<strong>Languages:</strong> Arabic (native), French (fluent), English (B2, Linguaskill), Spanish (A2). <strong>Interests:</strong> golf, music, travel and discovering other cultures."
     },
     
