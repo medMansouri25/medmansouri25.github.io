@@ -317,6 +317,7 @@ ul li {
 
 .hero-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   margin-bottom: 2rem;
@@ -702,6 +703,7 @@ ul li {
   transform: translateX(4px);
 }
 
+
 /* ============================================
    EXPERIENCE SECTION (TIMELINE)
    ============================================ */
@@ -809,217 +811,6 @@ ul li {
 
 .timeline-card ul {
   margin: 1rem 0;
-}
-
-/* ============================================
-   COMPÉTENCES PROFESSIONNELLES SECTION
-   ============================================ */
-.pro-skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 2rem;
-}
-
-.pro-skill-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  transition: all var(--transition);
-  position: relative;
-  overflow: hidden;
-}
-
-.pro-skill-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 100%;
-  background: linear-gradient(180deg, var(--gradient-start), var(--gradient-end));
-  opacity: 0;
-  transition: opacity var(--transition);
-}
-
-.pro-skill-card:hover {
-  box-shadow: var(--shadow-xl);
-  border-color: var(--accent);
-  transform: translateY(-4px);
-}
-
-.pro-skill-card:hover::before {
-  opacity: 1;
-}
-
-.pro-skill-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid var(--border-color);
-}
-
-.pro-skill-icon {
-  font-size: 2.5rem;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--accent-light);
-  border-radius: 0.75rem;
-  flex-shrink: 0;
-}
-
-.pro-skill-header > div {
-  flex: 1;
-}
-
-.pro-skill-header h3 {
-  font-size: 1.35rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-primary);
-}
-
-.pro-badge {
-  display: inline-block;
-  padding: 0.35rem 0.9rem;
-  border-radius: 2rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.pro-badge-autonome {
-  background: rgba(5, 150, 105, 0.15);
-  color: #059669;
-  border: 1px solid rgba(5, 150, 105, 0.4);
-}
-
-.pro-badge-progression {
-  background: rgba(249, 115, 22, 0.15);
-  color: #f97316;
-  border: 1px solid rgba(249, 115, 22, 0.4);
-}
-
-.pro-skill-content h4 {
-  font-size: 1rem;
-  color: var(--accent);
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-}
-
-.pro-skill-content h4:first-child {
-  margin-top: 0;
-}
-
-.pro-skill-content ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 1rem;
-}
-
-.pro-skill-content ul li {
-  padding-left: 1.5rem;
-  margin-bottom: 0.6rem;
-  position: relative;
-  color: var(--text-secondary);
-  line-height: 1.6;
-}
-
-.pro-skill-content ul li::before {
-  content: '▸';
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-  font-weight: bold;
-}
-
-.pro-evaluation {
-  margin-top: 1.5rem;
-  padding: 1.25rem;
-  background: var(--bg-secondary);
-  border-left: 3px solid var(--accent);
-  border-radius: 0.5rem;
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--text-secondary);
-}
-
-.pro-evaluation strong {
-  color: var(--accent);
-  font-weight: 600;
-}
-
-/* Groupes UF (Semestre 8) */
-.uf-block {
-  margin-bottom: 3rem;
-}
-
-.uf-block:last-child {
-  margin-bottom: 0;
-}
-
-.uf-group-title {
-  font-size: 1.5rem;
-  color: var(--text-primary);
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 3px solid var(--accent);
-  display: inline-block;
-}
-
-.uf-code {
-  display: inline-block;
-  background: var(--accent-light);
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  padding: 0.2rem 0.6rem;
-  border-radius: 0.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.pro-skill-content p {
-  color: var(--text-secondary);
-  line-height: 1.7;
-  margin-bottom: 0.5rem;
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .pro-skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .pro-skill-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .pro-skill-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
-  }
-
-  .pro-skill-content h4 {
-    font-size: 0.9rem;
-  }
-
-  .pro-evaluation {
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
 }
 
 /* ============================================
@@ -1228,7 +1019,7 @@ ul li {
 }
 
 /* Menu mobile pour tablettes aussi - activé plus tôt */
-@media (max-width: 1300px) {
+@media (max-width: 999px) {
   .mobile-menu-toggle {
     display: flex;
   }
@@ -1339,12 +1130,7 @@ ul li {
   .timeline-item::before {
     left: -2rem;
   }
-  
-  /* Ajuster le sélecteur de langue sur mobile */
-  .language-selector {
-    top: 70px !important;
-    right: 10px !important;
-  }
+
 }
 
 @media (max-width: 480px) {
