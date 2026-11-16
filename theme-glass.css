@@ -180,7 +180,6 @@ strong { color: var(--cream); font-weight: 600; }
   white-space: nowrap;
 }
 .logo:hover { color: var(--cream); transform: none; }
-.logo svg { width: 22px; height: 22px; flex: none; }
 
 .nav-right {
   position: absolute;
