@@ -11,6 +11,8 @@ const translations = {
       "1": "En progrès"
     },
 
+    a11y: { skip: "Aller au contenu" },
+
     // Navigation
     nav: {
       home: "Accueil",
@@ -225,6 +227,8 @@ const translations = {
       "2": "Basic knowledge",
       "1": "In progress"
     },
+
+    a11y: { skip: "Skip to content" },
 
     // Navigation
     nav: {

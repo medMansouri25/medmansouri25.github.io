@@ -17,7 +17,7 @@ html[data-theme] {
   --coral-text: #ff8d74;          /* corail lisible en texte sur navy */
   --cream: #f4efe9;
   --cream-2: rgba(244, 239, 233, 0.74);
-  --cream-3: rgba(244, 239, 233, 0.52);
+  --cream-3: rgba(244, 239, 233, 0.64);   /* ≥ 4.5:1 sur les cartes (WCAG AA) */
 
   /* verre */
   --glass: rgba(255, 255, 255, 0.075);
@@ -903,4 +903,77 @@ body::before {
 }
 @media (prefers-reduced-transparency: reduce) {
   .glass-sheen { display: none; }
+}
+
+/* ==========================================================================
+   ACCESSIBILITÉ & ERGONOMIE (audit WCAG 2.2)
+   ========================================================================== */
+
+/* lien d'évitement : invisible, apparaît au premier Tab */
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 2000;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--coral);
+  color: #fff;
+  font-weight: 700;
+  transform: translateY(-160%);
+  transition: transform 0.2s var(--ease-out);
+}
+.skip-link:focus { transform: none; color: #fff; }
+main:focus { outline: none; }
+
+/* cartes projets : le lien « Code GitHub » couvre toute la carte (clavier + souris + lecteur d'écran) */
+.project-card .card-link { position: static; }
+.project-card .card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+}
+.project-card .card-link:focus-visible { outline: none; }
+.project-card:has(.card-link:focus-visible) {
+  outline: 2px solid var(--coral-hi);
+  outline-offset: 3px;
+}
+
+/* « Qui suis-je ? » devient un h3 : on garde l'apparence du titre */
+.about-heading {
+  font-family: "Inter Tight", "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  font-size: clamp(1.75rem, 3.6vw, 2.25rem);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+/* contraste : petits libellés lisibles sur le halo corail */
+.pc-label { color: var(--cream-2); font-size: 12px; }
+.pc-tools span { font-size: 12px; }
+.panel-top { font-size: 12.5px; }
+.panel-pill { font-size: 12.5px; }
+
+/* jamais de texte sous 12 px (le thème d'origine réduit la taille de base à 14 px sur mobile) */
+@media (max-width: 480px) {
+  .tag-pill, .tag-pill small, .pc-label, .pc-tools span, .project-note, .timeline-location,
+  .edu-dates, .hero-eyebrow, .language-selector .lang-btn { font-size: max(12px, 1em); }
+  .hero-eyebrow { font-size: 12px; }
+}
+
+/* cibles tactiles ≥ 44 px au doigt (sans changer la mise en page) */
+@media (pointer: coarse) {
+  .logo { padding-block: 10px; margin-block: -10px; }
+  .hero-socials a { display: inline-block; padding: 12px 8px; margin: -12px -8px; }
+  .contact-card a { display: inline-block; padding-block: 11px; margin-block: -11px; }
+  .panel-pill { min-height: 44px; padding-inline: 16px; }
+  .mobile-menu-toggle { width: 44px; height: 44px; }
+  .nav-links a { min-height: 44px; }
+  .language-selector .lang-btn { position: relative; min-height: 36px; padding-inline: 14px; }
+  /* zone de toucher étendue à 44 px autour de chaque bouton de langue */
+  .language-selector .lang-btn::after { content: ""; position: absolute; inset: -4px -2px; }
+  .project-card .card-link { padding-block: 10px; }
 }
